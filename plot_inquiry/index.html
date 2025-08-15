@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plot Buying Inquiry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Plot Buying Inquiry Form</h2>
+        <form id="inquiryForm" action="server.php" method="POST">
+            <label>Name:</label>
+            <input type="text" name="name" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Phone Number:</label>
+            <input type="tel" name="phone" pattern="[0-9]{10}" required>
+
+            <label>Preferred Location:</label>
+            <input type="text" name="location" required>
+
+            <label>Budget (₹):</label>
+            <input type="number" name="budget" required>
+
+            <label>Message:</label>
+            <textarea name="message" rows="4"></textarea>
+
+            <button type="submit">Submit Inquiry</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
